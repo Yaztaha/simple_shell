@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 			return (0);
 		}
 		if (_strcmp(newline, "exit") == 0 && _strlen(newline) > 0)
-			exit(0);
+			free(line), free(newline), exit(0);
 		tokens = tokenline(newline);
 		if (tokens == NULL)
 		{
