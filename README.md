@@ -1,4 +1,4 @@
-# Simple shell 
+²iSimple shell 
 
 is a program that receives computer commands given by a user from his keyboard to send them to the operating system, which will execute them ( our simple shell was build with the C language ) 
 using function calls and standard functions like (getline, wait (), fork, perror, malloc, free ..) we created the simple shell (hsh) which looks like the shell (sh) at basic operations . 
@@ -56,12 +56,7 @@ compiled with ubuntu 14.04 LTS on this way  -Wall -Werror -Wextra and -pedantic.
 
 ### exemple : 
 
-
-<video controls="controls">
-  <source type="video/mp4" src="https://thumbs.gfycat.com/SimplisticDeepFieldmouse-mobile.mp4"></source>
-  <source type="video/webm" src="filename.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+![Image of Yaktocat](https://s6.gifyu.com/images/SimplisticDeepFieldmouse-mobile.gif)
 
 
 ### Authors :
