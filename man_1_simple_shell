@@ -1,0 +1,20 @@
+.TH man 1 "12 avril 2020" "simple_shell man page"
+.SH NAME
+.B simple_shell
+- command line interpreter (CLI)
+.SH SYNOPSIS
+.B simple_shell [options] [file]
+.SH DESCREPTION
+.B simple_shell
+is custom made shell for Holberton School
+.SH COMMANDS
+.IP exit
+Terminates the shell.
+.IP ls
+List all directories.
+.IP env
+Display enviroment variables to stdout.
+.SH BUGS
+- - - - -
+.SH AUTHORS
+Written by Seif Jelidi and Taha Yazidi
