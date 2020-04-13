@@ -47,7 +47,7 @@ compiled with ubuntu 14.04 LTS on this way  -Wall -Werror -Wextra and -pedantic.
 
 
 
-### installataion and usage :question:
+### installation and usage :
 
 - Clone this repository : [https://github.com/Yaztaha/simple_shell](https://github.com/Yaztaha/simple_shell/)
 - Go into the repository 
