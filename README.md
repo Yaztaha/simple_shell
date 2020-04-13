@@ -11,7 +11,7 @@ developed and tested on ubuntu 14.04 LTS with vagrant in virtualBox.
 
 compiled with ubuntu 14.04 LTS on this way  -Wall -Werror -Wextra and -pedantic.
 
-### Files , fuctions and their descriptions : 
+### Files , functions and their descriptions : 
 
 #### Files :
 
