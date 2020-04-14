@@ -58,10 +58,12 @@ char *getfullpath(char **command, char **env)
 
 	thepath = getvar("PATH", env);
 	path = malloc(_strlen(thepath) + 1);
+	memset(path, 0, _strlen(thepath) + 1);
 	if (path == NULL)
 		return (NULL);
 	_strcpy(path, thepath);
 	ch = malloc(_strlen(command[0]) + 2);
+	memset(ch, 0, _strlen(command[0]) + 2);
 	if (ch == NULL)
 	{	free(path);
 		return (NULL);
@@ -73,6 +75,8 @@ char *getfullpath(char **command, char **env)
 	{
 		newpath = malloc(sizeof(char *) *
 				 (_strlen(token) + _strlen(ch) + 1));
+		memset(newpath, 0, sizeof(char *) *
+				(_strlen(token) + _strlen(ch) + 1));
 		if (newpath == NULL)
 			return (NULL);
 		_strcpy(newpath, token);
