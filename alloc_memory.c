@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * alloc_memory - allocates memory for char
- * Description: allocates memory for char
- * @ch: pointer to char array
- * Return: pointer to new memory
+ *alloc_memory - allocates memory for char
+ *Description: allocates memory for char
+ *@ch: pointer to char array 
+ *Return: pointer to new memory
  */
 
 char *alloc_memory(char *ch)
