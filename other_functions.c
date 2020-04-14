@@ -47,7 +47,7 @@ char *getvar(char *var, char **env)
  * getfullpath - search for complete path of a command and returns it
  * Description: search for complete path of a command and returns it
  * @command: command to search
- * @env: environment
+ * @env: the environment .
  * Return: path of command or NULL if not found.
  */
 
