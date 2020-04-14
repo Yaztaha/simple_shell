@@ -3,7 +3,7 @@
 /**
  *alloc_memory - allocates memory for char
  *Description: allocates memory for char
- *@ch: pointer to char array 
+ *@ch: pointer to char array
  *Return: pointer to new memory
  */
 
