@@ -3,7 +3,7 @@
 is a program that receives computer commands given by a user from his keyboard to send them to the operating system, which will execute them ( our simple shell was build with the C language ) 
 using function calls and standard functions like (getline, wait (), fork, perror, malloc, free ..) we created the simple shell (hsh) which looks like the shell (sh) at basic operations . 
 
-### Environement :
+### Environment :
 
 developed and tested on ubuntu 14.04 LTS with vagrant in virtualBox.
 

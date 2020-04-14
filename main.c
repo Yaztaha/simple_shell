@@ -4,7 +4,7 @@
 
 /**
  * main - entry point for shell program
- * Description: function will read a line, break it into tokens, and execute
+ * Description: function will read a line, break it into tokens and execute
  * @argc: number of arguments
  * @argv: arguments passed
  * @env: environment
