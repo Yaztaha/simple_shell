@@ -4,14 +4,15 @@
 
 /**
  * main - entry point for shell program
- * Description: function will read a line, break it into tokens, and execute
+ * Description: function will read a line, break it into tokens and execute
  * @argc: number of arguments
  * @argv: arguments passed
+ * @env: environment
  * the call, then return to main when end of file is reached
  * Return: 0 when EOF is reached (ie user presses Ctrl + D)
  */
 
-int main(int argc, char **argv)
+int main(int argc, char **argv, char **env)
 {
 	char *line, *newline;
 	size_t length = 0;
@@ -36,17 +37,16 @@ int main(int argc, char **argv)
 		}
 		if (_strcmp(newline, "exit") == 0 && _strlen(newline) > 0)
 			free(line), free(newline), exit(0);
+		else if (_strcmp(newline, "env") == 0 && _strlen(newline) > 0)
+			execute_env(env);
 		tokens = tokenline(newline);
 		if (tokens == NULL)
-		{
-			free(line), free(newline);
-			return (0);
-		}
+			return (freelines(line, newline));
 		pid = fork();
 		if (pid == 0)
 		{
 			if (newline[0] != '\0')
-				if (execve(newline, argv, NULL) == -1)
+				if (execve(getfullpath(tokens, env), tokens, NULL) == -1)
 					perror(argv[0]), exit(127);
 		}
 		else

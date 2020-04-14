@@ -3,8 +3,8 @@
 /**
  * tokenline - splits a line into tokens and stores them into a string array
  * Description: splits a line into tokens and stores them into a string array
- * @line: line string to split
- * Return: array of strings
+ * @line: line string to split.
+ * Return: array of the strings.
  */
 
 char **tokenline(char *line)
@@ -21,7 +21,7 @@ char **tokenline(char *line)
 		if (line[i] == ' ')
 			token_num++;
 	}
-	tokens = malloc(sizeof(char *) * (token_num + 1));
+	tokens = malloc(sizeof(char *) * token_num);
 	if (tokens == NULL)
 	{
 		free(tokens);
