@@ -12,7 +12,7 @@ char **tokenline(char *line)
 	char **tokens;
 	char *token;
 	int i, token_num = 0, k = 0;
-	char delims[] = " \t\0";
+	char delims[] = "\r\n\a\v \t\0";
 
 	if (line == NULL)
 		return (NULL);
