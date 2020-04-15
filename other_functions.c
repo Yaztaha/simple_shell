@@ -78,7 +78,7 @@ char *getfullpath(char **command, char **env)
 		_strcpy(newpath, token);
 		_strcat(newpath, ch);
 		newpath[_strlen(token) + _strlen(ch)] = '\0';
-		if (stat(newpath, &st) == 0 && access(newpath, X_OK) == 0)
+		if (stat(newpath, &st) == 0)
 			return (newpath);
 		token = strtok(NULL, ":");
 		free(newpath);
