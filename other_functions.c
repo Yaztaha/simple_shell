@@ -114,8 +114,12 @@ int freelines(char *ch1, char *ch2)
 
 void execute_env(char **env)
 {
-	int i;
+	int i, j;
 
 	for (i = 0 ; env[i] != '\0' ; i++)
-		printf("%s\n", env[i]);
+	{
+		for (j = 0 ; env[i][j] != '\0' ; j++)
+			_putchar(env[i][j]);
+		_putchar('\n');
+	}
 }
