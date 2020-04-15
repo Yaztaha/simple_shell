@@ -21,5 +21,6 @@ char *getvar(char *var, char **env);
 char *getfullpath(char **command, char **env);
 int freelines(char *ch1, char *ch2);
 void execute_env(char **env);
+int _putchar(char c);
 
 #endif

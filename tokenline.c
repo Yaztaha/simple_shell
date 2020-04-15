@@ -12,7 +12,7 @@ char **tokenline(char *line)
 	char **tokens;
 	char *token;
 	int i, token_num = 0, k = 0;
-	char delims[] = " \t\0";
+	char delims[] = "\r\n\a\v \t\0";
 
 	if (line == NULL)
 		return (NULL);
@@ -21,7 +21,7 @@ char **tokenline(char *line)
 		if (line[i] == ' ')
 			token_num++;
 	}
-	tokens = malloc(sizeof(char *) * (token_num + 1));
+	tokens = malloc(sizeof(char *) * (token_num + 2));
 	if (tokens == NULL)
 	{
 		free(tokens);
@@ -30,7 +30,7 @@ char **tokenline(char *line)
 	token = strtok(line, delims);
 	while (token != NULL)
 	{
-		tokens[k] = malloc(sizeof(char) * _strlen(token) + 1);
+		tokens[k] = malloc(sizeof(char) * (_strlen(token) + 1));
 		_strcpy(tokens[k], token);
 		token = strtok(NULL, delims);
 		k++;

@@ -67,21 +67,12 @@ int _strcmp(char *s1, char *s2)
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int j = 0;
-	int k;
-	int a = 0;
+	int i = 0, j = 0, a = 0, k;
 
 	while (dest[i] != '\0')
-	{
 		i++;
-	}
-
 	while (src[j] != '\0')
-	{
 		j++;
-	}
-
 	for (k = i ; k < i + j ; k++)
 	{
 		dest[k] = src[a];
