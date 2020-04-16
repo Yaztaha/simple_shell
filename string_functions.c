@@ -9,15 +9,10 @@ int _strlen(char *s)
 {
 	int c = 0;
 
-	s = malloc(sizeof(char));
-	if (s == NULL)
-		return (NULL);
-
 	while (s[c] != '\0')
 	{
 		c++;
 	}
-	free(s);
 	return (c);
 
 }
