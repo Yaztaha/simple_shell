@@ -21,7 +21,7 @@ char **tokenline(char *line)
 		if (line[i] == ' ')
 			token_num++;
 	}
-	tokens = malloc(sizeof(char *) * (token_num + 2));
+	tokens = malloc(sizeof(char *) * (token_num + 1));
 	if (tokens == NULL)
 	{
 		free(tokens);
