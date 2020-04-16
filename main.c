@@ -46,7 +46,7 @@ int main(int argc, char **argv, char **env)
 		if (pid == 0)
 		{
 			if (newline[0] != '\0')
-				if (execve(getfullpath(tokens, env), tokens, NULL) == -1)
+				if (execve(getfullpath(tokens, env), tokens, env) == -1)
 					perror(argv[0]), exit(127);
 		}
 		else
